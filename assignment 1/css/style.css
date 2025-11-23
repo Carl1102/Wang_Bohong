@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #f2f2f2;
+  padding: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+/* Staff page layout */
+.staff-member {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.staff-member img {
+    width: 300px;      /* 统一图片宽度 */
+    height: auto;      /* 保持比例 */
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 6px;
+}
+
+.staff-member p {
+    margin-top: 4px;
+    font-weight: bold;
+}
+/* Center page content */
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation spacing */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+}
+
+/* Titles spacing */
+h1, h2 {
+    margin-bottom: 15px;
+}
+/* Center the navigation bar */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Add spacing between nav links */
+nav a {
+    margin: 0 15px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.fullwidth-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+/* 两张并排图 */
+.services-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.services-images img {
+    width: 45%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.page-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.page-images img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
