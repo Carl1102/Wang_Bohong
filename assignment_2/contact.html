@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>100SMILES Dental Care – Contact &amp; Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/form-validation.js" defer></script>
+</head>
+<body class="page-contact">
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="logo">100SMILES Dental Care</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="staff.html">Our Team</a>
+      <a href="contact.html" class="active">Contact &amp; Booking</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main contact-layout">
+  <section class="card contact-details">
+    <h1>Contact &amp; Online Booking</h1>
+    <p>Use the form below to request an appointment, or contact us by phone or email.</p>
+
+    <h2>Clinic Details</h2>
+    <p><strong>Address:</strong> 33 Fantail Street, Razole, Queensland</p>
+    <p><strong>Phone:</strong> 07 5000 5599</p>
+    <p><strong>Fax:</strong> 07 4567 9999</p>
+    <p><strong>Email:</strong> <a href="mailto:admin@100smilesdentalcare.com.au">
+      admin@100smilesdentalcare.com.au</a></p>
+
+    <h3>Trading Hours</h3>
+    <p>Monday – Friday: 8:30 am – 6:30 pm</p>
+    <p>Saturday – Sunday: 8:30 am – 1:00 pm</p>
+
+    <figure class="contact-image">
+      <img src="Images/AdobeStock_311198389.jpeg"
+           alt="Reception area of dental clinic">
+      <figcaption>Our friendly team is ready to help with your booking.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card booking-form-card">
+    <h2>Online Booking Form</h2>
+    <form id="bookingForm" novalidate>
+      <div class="form-row">
+        <label for="fullName">Full Name<span class="required">*</span></label>
+        <input type="text" id="fullName" name="fullName" required>
+        <span class="error" id="error-name"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email<span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="error-email"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone<span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" required>
+        <span class="error" id="error-phone"></span>
+      </div>
+
+      <div class="form-row form-inline">
+        <div>
+          <label for="date">Preferred Date<span class="required">*</span></label>
+          <input type="date" id="date" name="date" required>
+          <span class="error" id="error-date"></span>
+        </div>
+        <div>
+          <label for="time">Preferred Time<span class="required">*</span></label>
+          <input type="time" id="time" name="time" required>
+          <span class="error" id="error-time"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="patientType">Patient Type<span class="required">*</span></label>
+        <select id="patientType" name="patientType" required>
+          <option value="">Please select…</option>
+          <option value="new-adult">New adult patient</option>
+          <option value="existing-adult">Existing adult patient</option>
+          <option value="child">Child / teenager</option>
+          <option value="senior">Senior</option>
+        </select>
+        <span class="error" id="error-patient"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="service">Service Requested<span class="required">*</span></label>
+        <select id="service" name="service" required>
+          <option value="">Please select…</option>
+          <option value="checkup">Routine check-up / cleaning</option>
+          <option value="annual">Annual Dental Check-Up package</option>
+          <option value="emergency">Emergency appointment</option>
+          <option value="orthodontic">Orthodontic consultation</option>
+          <option value="implant">Implant / restorative consultation</option>
+          <option value="other">Other service</option>
+        </select>
+        <span class="error" id="error-service"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="details">Additional Information</label>
+        <textarea id="details" name="details" rows="4"
+                  placeholder="Tell us briefly what you would like help with."></textarea>
+      </div>
+
+      <div class="form-row checkbox-row">
+        <label>
+          <input type="checkbox" id="agree" name="agree" required>
+          I understand that this form is a booking request and the clinic will confirm
+          my appointment details.
+        </label>
+        <span class="error" id="error-agree"></span>
+      </div>
+
+      <button type="submit" class="btn primary">Submit Booking Request</button>
+      <p class="form-note">Fields marked with <span class="required">*</span> are required.</p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; 100SMILES Dental Care, Razole. Phone: 07 5000 5599
+</footer>
+</body>
+</html>
